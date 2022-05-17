@@ -1,0 +1,87 @@
+body {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(135, 206, 250);
+  background: linear-gradient(#456142, #463822);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: #ffff;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  max-width: 600px;
+  height: 400px;
+  padding: 2em;
+}
+form p {
+  margin-bottom: 18px;
+  font-size: 1.175em;
+  line-height: 32px;
+}
+
+form fieldset {
+  margin-bottom: 28px;
+  padding: 0;
+  border: none;
+}
+
+form a.continue {
+  font-size: 1.175em;
+  background-color: lightgray;
+  color: #456142;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+form a.continue:hover form a.continue:focus {
+  background-color: lightgoldenrodyellow;
+  color: brown;
+}
+form a.continue {
+  float: right;
+}
+button.reset {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+button.reset:hover {
+  color: lightcoral;
+}
+form label span {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 14px 12px;
+  border: 2px solid orange;
+  cursor: pointer;
+  border-radius: 25px;
+}
+form label:hover span,
+form label:focus span {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+form input[type="radio"] {
+  visibility: hidden;
+}
+form input [type="radio"]:checked + span {
+  border: 2px solid #da966a;
+  background-color: #f5ecee;
+  color: #463822;
+}
